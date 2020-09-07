@@ -34,11 +34,92 @@
 // }
 
 // variables.less
-$theme-primary: #F05F40;
-$theme-dark: #222;
+$theme-primary: #CFD8FF;
+$theme-dark: #271B36;
+$theme-secondary: #FFF98E;
+$theme-neutral: #656153;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
         "base"
 ;
+
+h1 {
+        font-size: 4em;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: $theme-dark;
+        text-transform: capitalize;
+        line-height: 1.5em;
+}
+
+h2 {
+        font-size: 1.75em;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        color: $theme-neutral;
+        line-height: 1.25em;
+}
+
+h3{
+        font-size: 1.75em;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        color: $theme-dark;
+        line-height: 1.25em;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2em;
+}
+
+h4 {
+        font-size: 1.5em;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color:$theme-dark;
+        line-height: 1.35em;
+
+}
+
+h5{ 
+        font-size: 1.25em;
+        font-weight: 700;
+        color: $theme-dark;
+        line-height: 1.35em;
+
+}
+
+p{
+        font-size: 1em;
+        font-weight: 400;
+        color: $theme-neutral;
+        line-height: 1.5em;
+
+}
+
+.center {
+        text-align: center;
+}
+
+.left {
+        text-align: left;
+}
+
+.right {
+        text-align: right;
+}
+
+.theme-dark{
+        color: $theme-dark !important;
+}
+
+#success {
+        background-color: $theme-primary;
+        padding-top: 4em;
+}
+
+.specialties img{
+        max-height: 5em;
+        max-width: auto;
+}

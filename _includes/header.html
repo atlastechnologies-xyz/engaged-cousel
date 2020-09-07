@@ -1,10 +1,14 @@
 <header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1>Your Favorite Source of Free Bootstrap Themes</h1>
-            <hr>
-            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+    <div class="row container">
+        <div class="col-sm-6 inner">
+            <h1 class="header">{{ include.title }}</h1>
+            <h2>{{ include.text }}</h2>
+            <br>
+            <br>
+            <a href="{{ include.ctaLink }}" class="btn btn-primary btn-xl page-scroll">{{ include.cta }}</a>
+        </div>
+        <div class="col-sm-6 outer">
+            <img src="{{ include.image }}">
         </div>
     </div>
 </header>

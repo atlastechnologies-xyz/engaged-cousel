@@ -155,12 +155,12 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
-    text-align: center;
-    color: white;
+    background-image: linear-gradient(to right, #ffffffcc, #271B36b3), url('../img/header-chicago.jpg');
+    text-align: left;
+    color: $theme-dark;
     .header-content {
         position: relative;
-        text-align: center;
+        text-align: left;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
