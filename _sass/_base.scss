@@ -46,6 +46,10 @@ p {
     background-color: $theme-primary;
 }
 
+.bg-secondary {
+    background-color: $theme-secondary;
+}
+
 .bg-dark {
     background-color: $theme-dark;
     color: white;
@@ -56,7 +60,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 2em 0 6em;
 }
 
 aside {
@@ -65,6 +69,10 @@ aside {
 
 .no-padding {
     padding: 0;
+}
+
+.small-padding {
+    padding: 1em 0;
 }
 
 // Navigation
@@ -78,7 +86,7 @@ aside {
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
-        text-transform: uppercase;
+        text-transform: capitalize;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -88,9 +96,10 @@ aside {
         > li {
             > a,
             > a:focus {
-                text-transform: uppercase;
+                text-transform: capitalize;
                 font-weight: 700;
-                font-size: 13px;
+                font-size: 1em;
+                letter-spacing: 0.03em;
                 color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
@@ -155,13 +164,13 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: linear-gradient(to right, #ffffffcc, #271B36b3), url('../img/header-chicago.jpg');
+    background-image: linear-gradient(to right, #ffffffe6, #271B36b3), url('../img/header-chicago.jpg');
     text-align: left;
     color: $theme-dark;
     .header-content {
         position: relative;
         text-align: left;
-        padding: 100px 15px 100px;
+        padding: 10em 2em;
         width: 100%;
         .header-content-inner {
             h1 {
@@ -296,7 +305,7 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant(white, $theme-dark, $theme-secondary);
 }
 
 .btn-primary {
@@ -306,7 +315,7 @@ header {
 .btn {
     @include sans-serif-font;
     border: none;
-    border-radius: 300px;
+    border-radius: 0.5em;
     font-weight: 700;
     text-transform: uppercase;
 }

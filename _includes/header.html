@@ -1,11 +1,15 @@
 <header>
     <div class="row container">
-        <div class="col-sm-6 inner">
-            <h1 class="header">{{ include.title }}</h1>
+        <div  id="header-text" class="col-sm-8 inner">
+            <span class="header"><h1 class="header">{{ include.title }}</h1>
+            </span>
             <h2>{{ include.text }}</h2>
             <br>
             <br>
-            <a href="{{ include.ctaLink }}" class="btn btn-primary btn-xl page-scroll">{{ include.cta }}</a>
+            <a href="{{ include.ctaLink }}" class="btn btn-default btn-xl page-scroll">{{ include.cta }}</a>
+            <div id="illinois-superlawyer" class="theme-neutral">
+                <h4>{{ include.subtext }}</h4>
+            </div>    
         </div>
         <div class="col-sm-6 outer">
             <img src="{{ include.image }}">

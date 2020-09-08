@@ -46,12 +46,13 @@ $theme-neutral: #656153;
 ;
 
 h1 {
-        font-size: 4em;
+        font-size: 3em !important;
         font-weight: 700;
         letter-spacing: 0.05em;
         color: $theme-dark;
         text-transform: capitalize;
         line-height: 1.5em;
+
 }
 
 h2 {
@@ -59,10 +60,11 @@ h2 {
         font-weight: 400;
         letter-spacing: 0.03em;
         color: $theme-neutral;
-        line-height: 1.25em;
+        line-height: 1.5em;
+        margin-top: 0.5em;
 }
 
-h3{
+h3 {
         font-size: 1.75em;
         font-weight: 700;
         letter-spacing: 0.02em;
@@ -70,7 +72,7 @@ h3{
         line-height: 1.25em;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 2em;
+        padding-bottom: 0.5em;
 }
 
 h4 {
@@ -78,24 +80,40 @@ h4 {
         font-weight: 400;
         letter-spacing: 0.02em;
         color:$theme-dark;
-        line-height: 1.35em;
+        line-height: 1.75em;
+        margin-top: 0.5em;
 
 }
 
-h5{ 
+h5 { 
         font-size: 1.25em;
         font-weight: 700;
         color: $theme-dark;
+        letter-spacing: 0.02em;
         line-height: 1.35em;
 
 }
 
-p{
+p {
+        @include sans-serif-font;
         font-size: 1em;
         font-weight: 400;
         color: $theme-neutral;
-        line-height: 1.5em;
+        line-height: 1.75em;
+}
 
+#header-text {
+        margin: 15em 15em;
+}
+
+footer {
+        @include sans-serif-font;
+        background: $theme-dark;
+        color: white;
+        bottom: 0;
+        width: 100vw !important;
+        margin-top: -2em;
+        list-style-type: none;
 }
 
 .center {
@@ -110,16 +128,41 @@ p{
         text-align: right;
 }
 
-.theme-dark{
+.theme-dark {
         color: $theme-dark !important;
 }
 
+.theme-neutral {
+        color: $theme-neutral;
+}
+
+#illinois-superlawyer {
+        color: $theme-neutral !important;
+        padding-top: 2em;
+}
+
 #success {
-        background-color: $theme-primary;
         padding-top: 4em;
 }
 
-.specialties img{
+#saveBig {
+        margin: -1em, auto;
+}
+
+.specialties img {
         max-height: 5em;
         max-width: auto;
+}
+.col-sm-2 {
+        padding-left: 1em;
+        padding-right: 1em;
+}
+.icons-category {
+        margin-left: -5em;
+        margin-right: -5em;
+        padding-top: 2.5em;
+}
+.social i{
+        max-height: 2em;
+        display: inline;
 }
